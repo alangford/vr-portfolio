@@ -52,9 +52,10 @@ const Skills = () => {
           <img id="GULP" src={gulp}/>
           <img id="GIT" src={git}/>
         </a-assets>,
-        <Entity text={{value: 'Andrew\'s Skills', height:"15", width:"15", align: 'center'}} rotation='0 90 0' position={{x: -9.5, y: 7, z: -0}}/> ,
-        <Entity primitive='a-box' height="2" width="8" color="black" rotation='0 90 0' position={{x: -10, y: 7.5, z: -0}}/>,
+        <Entity text={{value: 'Andrew\'s Skills', height:"15", width:"15", align: 'center'}} rotation='0 90 0' position={{x: -9.5, y: 7.5, z: -0}}/> ,
+        <Entity primitive='a-box' height="2" width="8" color="brown" rotation='0 90 0' position={{x: -10, y: 7.5, z: -0}}/>,
         <Entity primitive='a-box' height="10" width="25" rotation='0 90 0' color="black" position={{x: -11, y: 5, z: -0}}/>,
+
         // backend
         <Entity primitive='a-box' src="#NODE" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 1, z: -8}} />,
         <Entity text={{value: 'Node.js', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 1, z: -10}}/> ,

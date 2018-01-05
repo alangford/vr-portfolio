@@ -5,6 +5,7 @@
   "dependencies": {
     "aframe": "^0.7.1",
     "aframe-animation-component": "^4.0.0-beta9",
+    "aframe-href-component": "^0.5.1",
     "aframe-particle-system-component": "^1.0.11",
     "aframe-react": "^4.3.0",
     "autoprefixer": "7.1.6",
