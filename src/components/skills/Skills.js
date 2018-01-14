@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {Entity, Scene} from 'aframe-react';
+import {Entity} from 'aframe-react';
 
 import * as js from './assets/js.png'
 import * as reac from './assets/react.png'
@@ -24,6 +24,7 @@ import * as aws from './assets/aws.png'
 import * as wp from './assets/webpack.png'
 import * as gulp from './assets/gulp.png'
 import * as git from './assets/git.jpg'
+
 const Skills = () => {
         
   return [     
@@ -53,55 +54,55 @@ const Skills = () => {
           <img id="GIT" src={git}/>
         </a-assets>,
         <Entity text={{value: 'Andrew\'s Skills', height:"15", width:"15", align: 'center'}} rotation='0 90 0' position={{x: -9.5, y: 7.5, z: -0}}/> ,
-        <Entity primitive='a-box' height="2" width="8" color="brown" rotation='0 90 0' position={{x: -10, y: 7.5, z: -0}}/>,
-        <Entity primitive='a-box' height="10" width="25" rotation='0 90 0' color="black" position={{x: -11, y: 5, z: -0}}/>,
+        <Entity primitive='a-box' height="2" width="8" src='#WALL3' rotation='0 90 0' position={{x: -10, y: 7.5, z: -0}}/>,
+        <Entity primitive='a-box' height="10" width="22" rotation='0 90 0' src='#WALL' position={{x: -11, y: 5, z: -0}}/>,
 
         // backend
-        <Entity primitive='a-box' src="#NODE" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 1, z: -8}} />,
-        <Entity text={{value: 'Node.js', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 1, z: -10}}/> ,
-        <Entity primitive='a-box' src="#JAVA" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 2.5, z: -8}} />,
-        <Entity text={{value: 'Java', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 2.5, z: -10}}/> ,
-        <Entity primitive='a-box' src="#GO" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 4, z: -8}} />,
-        <Entity text={{value: 'Go', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 4, z: -10}}/> ,
-        <Entity primitive='a-box' src="#RUBY" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 5.5, z: -8}} />,
-        <Entity text={{value: 'Ruby', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 5.5, z: -10}}/> ,
+        <Entity primitive='a-box' src="#NODE" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 1, z: -7}} />,
+        <Entity text={{value: 'Node.js', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 1, z: -9}}/> ,
+        <Entity primitive='a-box' src="#JAVA" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 2.5, z: -7}} />,
+        <Entity text={{value: 'Java', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 2.5, z: -9}}/> ,
+        <Entity primitive='a-box' src="#GO" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 4, z: -7}} />,
+        <Entity text={{value: 'Go', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 4, z: -9}}/> ,
+        <Entity primitive='a-box' src="#RUBY" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 5.5, z: -7}} />,
+        <Entity text={{value: 'Ruby', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 5.5, z: -9}}/> ,
 
         //devops
-        <Entity primitive='a-box' src="#NGINX" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 1, z: -3.5}} />,
-        <Entity text={{value: 'Nginx', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 1, z: -5}}/> ,
-        <Entity primitive='a-box' src="#DOCKER" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 2.5, z: -3.5}} />,
-        <Entity text={{value: 'Docker', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 2.5, z: -5}}/> ,
-        <Entity primitive='a-box' src="#AWS" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 4, z: -3.5}} />,
-        <Entity text={{value: 'AWS', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 4, z: -5}}/> ,
+        <Entity primitive='a-box' src="#NGINX" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 1, z: -3.5}} />,
+        <Entity text={{value: 'Nginx', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 1, z: -5}}/> ,
+        <Entity primitive='a-box' src="#DOCKER" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 2.5, z: -3.5}} />,
+        <Entity text={{value: 'Docker', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 2.5, z: -5}}/> ,
+        <Entity primitive='a-box' src="#AWS" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 4, z: -3.5}} />,
+        <Entity text={{value: 'AWS', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 4, z: -5}}/> ,
 
 
         // frontend
-        <Entity primitive='a-box' src="#JS" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 1, z: 0}} />,
-        <Entity text={{value: 'JavaScript', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 1, z: -1.5}}/> ,
-        <Entity primitive='a-box' src="#JQUERY" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 2.5, z: 0}} />,
-        <Entity text={{value: 'jQuery', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 2.5, z: -1.5}}/> ,
-        <Entity primitive='a-box' src="#ANGULAR" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 4, z: 0}} />,
-        <Entity text={{value: 'Angular.js', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 4, z: -1.5}}/> ,
-        <Entity primitive='a-box' src="#REACT" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 5.5, z: 0}} />,
-        <Entity text={{value: 'React', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 5.5, z: -1.5}}/> ,
+        <Entity primitive='a-box' src="#JS" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 1, z: 1}} />,
+        <Entity text={{value: 'JavaScript', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 1, z: -1}}/> ,
+        <Entity primitive='a-box' src="#JQUERY" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 2.5, z: 1}} />,
+        <Entity text={{value: 'jQuery', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 2.5, z: -1}}/> ,
+        <Entity primitive='a-box' src="#ANGULAR" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 4, z: 1}} />,
+        <Entity text={{value: 'Angular.js', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 4, z: -1}}/> ,
+        <Entity primitive='a-box' src="#REACT" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 5.5, z: 1}} />,
+        <Entity text={{value: 'React', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 5.5, z: -1}}/> ,
 
         //misc
-        <Entity primitive='a-box' src="#WEBPACK" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 1, z: 3.5}} />,
-        <Entity text={{value: 'Webpack', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 1, z: 2}}/> ,
-        <Entity primitive='a-box' src="#GULP" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 2.5, z: 3.5}} />,
-        <Entity text={{value: 'Gulp', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 2.5, z: 2}}/> ,
-        <Entity primitive='a-box' src="#GIT" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 4, z: 3.5}} />,
-        <Entity text={{value: 'Git', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 4, z: 2}}/> ,
+        <Entity primitive='a-box' src="#WEBPACK" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 1, z: 5}} />,
+        <Entity text={{value: 'Webpack', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 1, z: 3.5}}/> ,
+        <Entity primitive='a-box' src="#GULP" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 2.5, z: 5}} />,
+        <Entity text={{value: 'Gulp', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 2.5, z: 3.5}}/> ,
+        <Entity primitive='a-box' src="#GIT" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 4, z: 5}} />,
+        <Entity text={{value: 'Git', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 4, z: 3.5}}/> ,
 
         // db
-        <Entity primitive='a-box' src="#MONGO" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 1, z: 8}} />,
-        <Entity text={{value: 'Mongo', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 1, z: 6}}/> ,
-        <Entity primitive='a-box' src="#MYSQL" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 2.5, z: 8}} />,
-        <Entity text={{value: 'MySql', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 2.5, z: 6}}/> ,
-        <Entity primitive='a-box' src="#POSTGRES" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 4, z: 8}} />,
-        <Entity text={{value: 'PostgresSQL', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 4, z: 6}}/> ,
-        <Entity primitive='a-box' src="#SQLLITE" height="1" width="1" rotation='0 90 0' position={{x: -10, y: 5.5, z: 8}} />,
-        <Entity text={{value: 'SqlLite', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10, y: 5.5, z: 6}}/> ,
+        <Entity primitive='a-box' src="#MONGO" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 1, z: 9}} />,
+        <Entity text={{value: 'Mongo', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 1, z: 7}}/> ,
+        <Entity primitive='a-box' src="#MYSQL" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 2.5, z: 9}} />,
+        <Entity text={{value: 'MySql', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 2.5, z: 7}}/> ,
+        <Entity primitive='a-box' src="#POSTGRES" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 4, z: 9}} />,
+        <Entity text={{value: 'PostgresSQL', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 4, z: 7}}/> ,
+        <Entity primitive='a-box' src="#SQLLITE" height="1" width="1" rotation='0 90 0' position={{x: -10.5, y: 5.5, z: 9}} />,
+        <Entity text={{value: 'SqlLite', height:"10", width:"10", align: 'center'}} rotation='0 90 0' position={{x: -10.5, y: 5.5, z: 7}}/> ,
 
 
   ]
