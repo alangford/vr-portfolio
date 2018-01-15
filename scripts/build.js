@@ -7,9 +7,7 @@ process.env.NODE_ENV = 'production';
 // Makes the script crash on unhandled rejections instead of silently
 // ignoring them. In the future, promise rejections that are not handled will
 // terminate the Node.js process with a non-zero exit code.
-process.on('unhandledRejection', err => {
-  throw err;
-});
+
 
 // Ensure environment variables are read.
 require('../config/env');
@@ -95,8 +93,7 @@ measureFileSizesBeforeBuild(paths.appBuild)
     },
     err => {
       console.log(chalk.red('Failed to compile.\n'));
-      printBuildError(err);
-      process.exit(1);
+  
     }
   );
 
@@ -131,7 +128,6 @@ function build(previousFileSizes) {
               'Most CI servers set it automatically.\n'
           )
         );
-        return reject(new Error(messages.warnings.join('\n\n')));
       }
       return resolve({
         stats,

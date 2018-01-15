@@ -34,7 +34,7 @@ import Resume from './components/resume/Resume'
 import Projects from './components/projects/Projects'
 import Roof from './components/Roof'
 
-class App extends Component {
+export class App extends Component {
   constructor() {
     super()
     this.state = {
