@@ -1,8 +1,12 @@
 import React from 'react'
 import {Entity} from 'aframe-react';
 
-import * as pong from './assets/pong.png'
+import * as adobe from './assets/adobe.png';
+import * as bgs from './assets/bgs.png';
+import * as pong from './assets/pong.png';
+import * as seek from './assets/seek.png';
 import * as tetris from './assets/tetris.png'
+import * as w3 from './assets/w3clone.png';
 
 
 const Projects = () => [
@@ -10,11 +14,25 @@ const Projects = () => [
   <Entity primitive='a-box' height="3" width="22" src='#WALL2'  position={{x: 0, y: 8.5, z: -10.5}}/>,
 
   <a-assets>
+      <img id="ADOBE" src={adobe}/>
+      <img id="BGS" src={bgs}/>
       <img id="PONG" src={pong}/>
+      <img id="SEEK" src={seek}/>
       <img id="TETRIS" src={tetris}/>
+      <img id="W3" src={w3}/>
     </a-assets>,
-    <a-image href='' src="#PONG" position='-2 1 -9.5' />,
-    <a-image href='' src="#TETRIS" position='2 1 -9.5' />,
+    <Entity text={{value: 'Adobe Clone', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: -4, y: 2, z: -9}}/> ,
+    <a-image href='adobe.andrewlangford.net' src="#ADOBE" position='-4 1 -9.5' />,
+    <Entity text={{value: 'BoardGameShelf.net', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: 0, y: 2, z: -9}}/> ,
+    <a-image href='www.boardgameshelf.net' src="#BGS" position='0 1 -9.5' />,
+    <Entity text={{value: 'Pong in JS', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: 4, y: 2, z: -9}}/> ,
+    <a-image href='pong.andrewlangford.net' src="#PONG" position='4 1 -9.5' />,
+    <Entity text={{value: 'A Heat Map App', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: -4, y: 5, z: -9}}/> ,
+    <a-image href='seek.andrewlangford.net' src="#SEEK" position='-4 4 -9.5' />,
+    <Entity text={{value: 'Tetris in JS', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: 0, y: 5, z: -9}}/> ,
+    <a-image href='tetris.andrewlangford.net' src="#TETRIS" position='0 4 -9.5' />,
+    <Entity text={{value: 'w3schools clone', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: 4, y: 5, z: -9}}/> ,
+    <a-image href='w3clone.andrewlangford.net' src="#W3" position='4 4 -9.5' />,
 ];
 
 export default Projects
