@@ -8,6 +8,7 @@ import * as seek from './assets/seek.png';
 import * as tetris from './assets/tetris.png'
 import * as w3 from './assets/w3clone.png';
 import * as otl from './assets/otl.png'
+import * as iquit from './assets/iquit.png'
 
 const Projects = () => [
   <Entity text={{value: 'Andrew\'s Projects', height:"15", width:"15", align: 'center'}} rotation='0 0 0' position={{x: 0, y: 8.5, z: -10}}/> ,
@@ -21,6 +22,7 @@ const Projects = () => [
       <img id="TETRIS" src={tetris}/>
       <img id="W3" src={w3}/>
       <img id="SEEK" src={seek}/>
+      <img id="IQUIT" src={iquit}/>
     </a-assets>,
     <Entity text={{value: 'Adobe Clone', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: -3, y: 2, z: -9}}/> ,
     <a-image href='http://adobe.andrewlangford.net' src="#ADOBE" position='-3 1 -9.5' />,
@@ -32,10 +34,12 @@ const Projects = () => [
     <a-image href='http://seek.andrewlangford.net' src="#SEEK" position='3 1 -9.5' />,
     <Entity text={{value: 'A React-Native App', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: -3, y: 5, z: -9}}/> ,
     <a-image href='https://github.com/Dream-Team99/On-The-Line-app' src="#OTL" position='-3 4 -9.5' />,
-    <Entity text={{value: 'Tetris in JS', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: 0, y: 5, z: -9}}/> ,
-    <a-image href='http://tetris.andrewlangford.net' src="#TETRIS" position='0 4 -9.5' />,
-    <Entity text={{value: 'w3schools clone', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: 3, y: 5, z: -9}}/> ,
-    <a-image href='http://w3clone.andrewlangford.net' src="#W3" position='3 4 -9.5' />,
+    <Entity text={{value: 'Tetris in JS', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: -1, y: 5, z: -9}}/> ,
+    <a-image href='http://tetris.andrewlangford.net' src="#TETRIS" position='-1 4 -9.5' />,
+    <Entity text={{value: 'w3schools clone', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: 1, y: 5, z: -9}}/> ,
+    <a-image href='http://w3clone.andrewlangford.net' src="#W3" position='1 4 -9.5' />,
+    <Entity text={{value: 'Quit smoking app', height:"5", width:"5", align: 'center'}} rotation='0 0 0' position={{x: 3, y: 5, z: -9}}/> ,
+    <a-image href='http://i-quit.andrewlangford.net' src="#IQUIT" position='3 4 -9.5' />,
 
 ];
 
