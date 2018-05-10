@@ -28,7 +28,7 @@ const Contact = () => [
     <Entity text={{value: 'Linkedin', height:"5", width:"5", align: 'center'}} rotation='0 -90 0' position={{x: 10.5, y: 3.5, z: 0}}/> ,
     <a-box href='https://www.linkedin.com/in/andrewbl/' height='2' width='2'  src="#LINKEDIN" rotation='0 -90 0' position='10.5 2 0' />,
     <Entity text={{value: 'Github', height:"5", width:"5", align: 'center'}} rotation='0 -90 0' position={{x: 10.5, y: 3.5, z: 3}}/> ,
-    <a-box href="https://github.com/bolty2142" height='2' width='2' src="#GITHUB" rotation='0 -90 0' position='10.5 2 3' />
+    <a-box href="https://github.com/alangford" height='2' width='2' src="#GITHUB" rotation='0 -90 0' position='10.5 2 3' />
 
 
 ];
