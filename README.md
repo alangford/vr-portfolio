@@ -72,7 +72,7 @@ This app is just a static webpage, once pushed to the master branch will be buil
 
 ## Authors
 
-* **Andrew Langford** - *initial work* - [GitHub Link](https://github.com/bolty2142)
+* **Andrew Langford** - *initial work* - [GitHub Link](https://github.com/alangford)
 
-See also the list of [contributors](https://github.com/bolty2142/vr-portfolio/graphs/contributors) who participated in this project
+See also the list of [contributors](https://github.com/alangford/vr-portfolio/graphs/contributors) who participated in this project
 
